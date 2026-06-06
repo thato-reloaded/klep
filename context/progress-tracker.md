@@ -4,11 +4,11 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Not started
+- In progress: design system and UI primitives
 
 ## Current Goal
 
-- Define the immediate implementation goal here.
+- Install and configure shadcn/ui components for the dark theme design system.
 
 ## Completed
 
@@ -16,20 +16,22 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## In Progress
 
-- None yet.
+- Implementing `Button`, `Card`, `Dialog`, `Input`, `Tabs`, `Scroll Area`, and `Textarea` components.
+- Adding dark theme CSS variables and Tailwind theme mapping.
 
 ## Next Up
 
-- Add the next planned feature unit here.
+- Wire the new UI primitives into the app and validate imports.
 
 ## Open Questions
 
-- Add unresolved product or implementation questions here.
+- None.
 
 ## Architecture Decisions
 
-- Add decisions that affect the system design or data model.
+- Use Tailwind v4 `@theme inline` with CSS variables for dark theme tokens.
+- Create a shared `cn()` utility in `lib/utils.ts` for component class merging.
 
 ## Session Notes
 
-- Add context needed to resume work in the next session.
+- The project uses Next.js app router and Tailwind v4 with `@tailwindcss/postcss`.
