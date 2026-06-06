@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📐 Klep AI
+
+> **Real-time collaborative system design workspace.**
+
+---
+
+## 💡 Overview
+
+Klep AI translates natural language into robust, production-ready technical architecture. 
+
+*   **Natural Language Input:** Describe your system in plain English.
+*   **AI-Powered Canvas:** An autonomous agent instantly maps your description onto a shared workspace.
+*   **Collaborative Refining:** Teams edit and fine-tune the architecture together dynamically.
+*   **Specification Engine:** Instantly generate detailed technical specifications from the final graph.
+
+---
+
+## 📖 Vocabulary
+
+### **klep** `/klɛp/`
+`noun`
+
+> A device or flap that controls the flow of a liquid or gas by opening, closing, or obstructing a passageway; a valve.
+
+*In the context of Klep AI, it represents the seamless regulation, flow, and orchestration of data and system components across your infrastructure canvas.*
+Use code with caution. 😉
 
 ## Getting Started
 
