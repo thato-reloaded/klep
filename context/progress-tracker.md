@@ -4,24 +4,27 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- In progress: design system and UI primitives
+- In progress: editor shell and UI chrome
 
 ## Current Goal
 
-- Install and configure shadcn/ui components for the dark theme design system.
+- Build the editor navbar and floating project sidebar with shadcn-inspired dark theme styling.
 
 ## Completed
 
-- None yet.
+- Implemented `EditorNavbar` with sidebar toggle button and icon state.
+- Implemented `ProjectSidebar` as a floating left panel that slides in without pushing page content.
+- Confirmed dialog pattern support via `components/ui/dialog.tsx` using dark theme tokens.
 
 ## In Progress
 
-- Implementing `Button`, `Card`, `Dialog`, `Input`, `Tabs`, `Scroll Area`, and `Textarea` components.
-- Adding dark theme CSS variables and Tailwind theme mapping.
+- Integrating editor chrome into the home page for validation.
+- Ensuring component imports and layout behavior compile cleanly.
 
 ## Next Up
 
-- Wire the new UI primitives into the app and validate imports.
+- Expand editor shell content and refine project panel interactions.
+- Add actual project data states and editor canvas framing.
 
 ## Open Questions
 
@@ -29,9 +32,10 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Architecture Decisions
 
-- Use Tailwind v4 `@theme inline` with CSS variables for dark theme tokens.
-- Create a shared `cn()` utility in `lib/utils.ts` for component class merging.
+- Use Tailwind v4 CSS variable tokens from `globals.css` for dark UI surfaces.
+- Keep sidebar floating and absolutely positioned to avoid content reflow.
+- Reuse `Button` and `Tabs` primitives from the shared UI library for consistency.
 
 ## Session Notes
 
-- The project uses Next.js app router and Tailwind v4 with `@tailwindcss/postcss`.
+- The app now includes the editor chrome shell and a working sidebar state toggle.
