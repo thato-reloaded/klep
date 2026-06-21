@@ -4,22 +4,26 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- In progress: editor shell and UI chrome
+- In progress: editor shell, UI chrome, and authentication wiring
 
 ## Current Goal
 
-- Build the editor navbar and floating project sidebar with shadcn-inspired dark theme styling.
+- Build the editor UI and complete Clerk authentication integration with protected routes.
 
 ## Completed
 
 - Implemented `EditorNavbar` with sidebar toggle button and icon state.
 - Implemented `ProjectSidebar` as a floating left panel that slides in without pushing page content.
-- Confirmed dialog pattern support via `components/ui/dialog.tsx` using dark theme tokens.
+- Added Clerk authentication and wrapped the root layout with `ClerkProvider` using the dark theme.
+- Created `/sign-in` and `/sign-up` pages with Clerk forms and a minimal two-panel desktop layout.
+- Refined the auth landing panels to match the requested 50/50 visual treatment with stronger left-side contrast and updated Klep AI branding.
+- Added `/editor` route for authenticated users and updated `/` to redirect users based on auth state.
+- Added `proxy.ts` to protect non-public routes and allow auth pages using configured env vars.
 
 ## In Progress
 
-- Integrating editor chrome into the home page for validation.
-- Ensuring component imports and layout behavior compile cleanly.
+- Validating auth route protection and ensuring Clerk pages use CSS variable styling only.
+- Confirming `npm run build` passes after the authentication integration.
 
 ## Next Up
 
@@ -32,10 +36,10 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Architecture Decisions
 
-- Use Tailwind v4 CSS variable tokens from `globals.css` for dark UI surfaces.
-- Keep sidebar floating and absolutely positioned to avoid content reflow.
-- Reuse `Button` and `Tabs` primitives from the shared UI library for consistency.
+- Use Clerk's `dark` theme as the base and override appearance variables with app CSS variables.
+- Protect routes by default with `proxy.ts`, exposing only sign-in and sign-up as public.
+- Keep Clerk's built-in user menu and profile flows intact via `UserButton` in the editor navbar.
 
 ## Session Notes
 
-- The app now includes the editor chrome shell and a working sidebar state toggle.
+- The app now includes authentication routing, protected editor access, and Clerk-managed user controls.
