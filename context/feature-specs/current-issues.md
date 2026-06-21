@@ -1,0 +1,1 @@
+The form right spacing have been improved a bit. Now double the current horizontal padding on the right-side auth form area. And adjust the card width accordigly for balance.
