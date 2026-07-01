@@ -22,12 +22,13 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## In Progress
 
+- Implementing the project dialogs experience on the editor home screen, including create, rename, and delete flows.
 - Validating auth route protection and ensuring Clerk pages use CSS variable styling only.
 - Confirming `npm run build` passes after the authentication integration.
 
 ## Next Up
 
-- Expand editor shell content and refine project panel interactions.
+- Finish wiring mock project state into the sidebar and confirm the dialog flow behaves correctly on desktop and mobile.
 - Add actual project data states and editor canvas framing.
 
 ## Open Questions

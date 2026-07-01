@@ -33,6 +33,7 @@
   .text-copy-muted { color: var(--text-muted); }
   .text-copy-faint { color: var(--text-faint); }
   .text-brand { color: var(--accent-primary); }
+  .bg-error { background-color: var(--state-error); }
   .text-ai { color: var(--accent-ai); }
   .text-ai-text { color: var(--accent-ai-text); }
   .text-error { color: var(--state-error); }

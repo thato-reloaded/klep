@@ -19,9 +19,6 @@ export const metadata: Metadata = {
   description: "Klep AI editor with Clerk authentication",
 };
 
-const signInUrl = process.env.NEXT_PUBLIC_SIGN_IN || "/sign-in";
-const signUpUrl = process.env.NEXT_PUBLIC_SIGN_UP || "/sign-up";
-
 const clerkAppearance = {
   baseTheme: dark,
   variables: {
